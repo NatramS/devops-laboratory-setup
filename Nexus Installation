@@ -1,0 +1,20 @@
+# Nexus Setup & Installation
+# Inside Nexus server also we need to install Docker
+
+sudo apt install docker.io
+
+# Install Nexus by running below command
+
+docker run -d -p 8081:8081 sonatype/nexus3
+
+docker ps
+
+# Connect to the Container ID
+
+docker exec -it <Container_ID> /bin/bash
+
+# Go to this location
+
+/opt/sonatype/sonatype-work/nexus3/cat admin.password
+
+# Copy the password
