@@ -1,0 +1,13 @@
+# SonarQube Setup & Installation
+# We need to install Docker first, because we will be using containerized SonarQube
+
+sudo apt install docker.io
+
+After installation, we run Docker in the detached mode to reduce logs & background process.
+
+docker run -d -p 9000:9000 sonarqube:lts-community
+
+Check Docker status
+
+docker ps
+Now try to open SonarQube in browser (https://xxxx.compute-1.amazonaws.com:9000)
