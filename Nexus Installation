@@ -17,4 +17,4 @@ docker exec -it <Container_ID> /bin/bash
 
 /opt/sonatype/sonatype-work/nexus3/cat admin.password
 
-# Copy the password
+# Copy the password and use it to login to Nexus Portal and reset the new password
